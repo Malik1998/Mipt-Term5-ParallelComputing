@@ -1,2 +1,2 @@
 # Mipt-Term5-ParallelComputing
-HW
+HW Gazizullin
