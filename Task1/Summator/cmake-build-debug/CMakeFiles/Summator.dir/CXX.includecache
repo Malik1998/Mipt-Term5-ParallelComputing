@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/LongSum/LongSum.h
+glob.h
+-
+
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/ReadFullFile/FullFileReader.h
+
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/Summator/Summator.cpp
+Summator.h
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/Summator/Summator.h
+../ReadFullFile/FullFileReader.h
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/ReadFullFile/FullFileReader.h
+pthread.h
+-
+iostream
+-
+
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/Summator/Summator.h
+cstddef
+-
+zconf.h
+-
+../LongSum/LongSum.h
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/LongSum/LongSum.h
+

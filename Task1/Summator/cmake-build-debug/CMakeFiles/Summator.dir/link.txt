@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/Summator.dir/main.cpp.o CMakeFiles/Summator.dir/LongSum/LongSum.cpp.o CMakeFiles/Summator.dir/Summator/Summator.cpp.o CMakeFiles/Summator.dir/ReadFullFile/FullFileReader.cpp.o  -o Summator -lpthread 
