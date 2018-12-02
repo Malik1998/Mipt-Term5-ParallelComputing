@@ -6,8 +6,34 @@
 
 #IncludeRegexTransform: 
 
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/LongSum/LongSum.cpp
+iostream
+-
+LongSum.h
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/LongSum/LongSum.h
+
 /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/LongSum/LongSum.h
 glob.h
+-
+string
+-
+
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/ReadFullFile/FullFileReader.cpp
+cstdio
+-
+sys/stat.h
+-
+zconf.h
+-
+iostream
+-
+FullFileReader.h
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/ReadFullFile/FullFileReader.h
+fcntl.h
+-
+stdio.h
+-
+cstring
 -
 
 /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/ReadFullFile/FullFileReader.h
@@ -28,5 +54,31 @@ cstddef
 zconf.h
 -
 ../LongSum/LongSum.h
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/LongSum/LongSum.h
+
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/main.cpp
+iostream
+-
+Summator/Summator.h
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/Summator/Summator.h
+
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/tests/TimeElapser/TimeElapser.cpp
+fstream
+-
+../../Summator/Summator.h
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/Summator/Summator.h
+../testGenerator/testGenerator.cpp
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/tests/testGenerator/testGenerator.cpp
+
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/tests/testGenerator/testGenerator.cpp
+string
+-
+fstream
+-
+ctime
+-
+math.h
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/tests/testGenerator/math.h
+../../LongSum/LongSum.h
 /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/LongSum/LongSum.h
 

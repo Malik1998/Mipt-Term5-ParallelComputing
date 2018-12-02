@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Summator.dir/LongSum/LongSum.cpp.o"
   "CMakeFiles/Summator.dir/Summator/Summator.cpp.o"
   "CMakeFiles/Summator.dir/ReadFullFile/FullFileReader.cpp.o"
+  "CMakeFiles/Summator.dir/tests/testGenerator/testGenerator.cpp.o"
+  "CMakeFiles/Summator.dir/tests/TimeElapser/TimeElapser.cpp.o"
   "Summator.pdb"
   "Summator"
 )

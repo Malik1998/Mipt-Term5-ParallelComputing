@@ -65,13 +65,50 @@ CMAKE_SOURCE_DIR = /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-
 CMAKE_BINARY_DIR = /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/cmake-build-debug
 
 #=============================================================================
+# Target rules for target CMakeFiles/SummatorTest.dir
+
+# All Build rule for target.
+CMakeFiles/SummatorTest.dir/all:
+	$(MAKE) -f CMakeFiles/SummatorTest.dir/build.make CMakeFiles/SummatorTest.dir/depend
+	$(MAKE) -f CMakeFiles/SummatorTest.dir/build.make CMakeFiles/SummatorTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/cmake-build-debug/CMakeFiles --progress-num=13,14,15,16,17 "Built target SummatorTest"
+.PHONY : CMakeFiles/SummatorTest.dir/all
+
+# Include target in all.
+all: CMakeFiles/SummatorTest.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/SummatorTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/cmake-build-debug/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/SummatorTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/SummatorTest.dir/rule
+
+# Convenience name for target.
+SummatorTest: CMakeFiles/SummatorTest.dir/rule
+
+.PHONY : SummatorTest
+
+# clean rule for target.
+CMakeFiles/SummatorTest.dir/clean:
+	$(MAKE) -f CMakeFiles/SummatorTest.dir/build.make CMakeFiles/SummatorTest.dir/clean
+.PHONY : CMakeFiles/SummatorTest.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/SummatorTest.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/Summator.dir
 
 # All Build rule for target.
 CMakeFiles/Summator.dir/all:
 	$(MAKE) -f CMakeFiles/Summator.dir/build.make CMakeFiles/Summator.dir/depend
 	$(MAKE) -f CMakeFiles/Summator.dir/build.make CMakeFiles/Summator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target Summator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/cmake-build-debug/CMakeFiles --progress-num=6,7,8,9,10,11,12 "Built target Summator"
 .PHONY : CMakeFiles/Summator.dir/all
 
 # Include target in all.
@@ -81,7 +118,7 @@ all: CMakeFiles/Summator.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Summator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/cmake-build-debug/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/cmake-build-debug/CMakeFiles 7
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Summator.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Summator.dir/rule
@@ -98,6 +135,43 @@ CMakeFiles/Summator.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/Summator.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/GraphTimeElapser.dir
+
+# All Build rule for target.
+CMakeFiles/GraphTimeElapser.dir/all:
+	$(MAKE) -f CMakeFiles/GraphTimeElapser.dir/build.make CMakeFiles/GraphTimeElapser.dir/depend
+	$(MAKE) -f CMakeFiles/GraphTimeElapser.dir/build.make CMakeFiles/GraphTimeElapser.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5 "Built target GraphTimeElapser"
+.PHONY : CMakeFiles/GraphTimeElapser.dir/all
+
+# Include target in all.
+all: CMakeFiles/GraphTimeElapser.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/GraphTimeElapser.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/cmake-build-debug/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/GraphTimeElapser.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/GraphTimeElapser.dir/rule
+
+# Convenience name for target.
+GraphTimeElapser: CMakeFiles/GraphTimeElapser.dir/rule
+
+.PHONY : GraphTimeElapser
+
+# clean rule for target.
+CMakeFiles/GraphTimeElapser.dir/clean:
+	$(MAKE) -f CMakeFiles/GraphTimeElapser.dir/build.make CMakeFiles/GraphTimeElapser.dir/clean
+.PHONY : CMakeFiles/GraphTimeElapser.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/GraphTimeElapser.dir/clean
 
 .PHONY : clean
 

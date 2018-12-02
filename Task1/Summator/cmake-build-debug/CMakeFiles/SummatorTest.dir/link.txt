@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/SummatorTest.dir/tests/SummatorTest/SummatorTest.cpp.o CMakeFiles/SummatorTest.dir/LongSum/LongSum.cpp.o CMakeFiles/SummatorTest.dir/Summator/Summator.cpp.o CMakeFiles/SummatorTest.dir/ReadFullFile/FullFileReader.cpp.o  -o SummatorTest -lpthread -lgtest -lgtest_main -lpthread 

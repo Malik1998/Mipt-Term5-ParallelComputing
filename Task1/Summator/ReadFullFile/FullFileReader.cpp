@@ -13,13 +13,14 @@
 
 namespace FullFileReader {
     void readFullFile(const char *FileName, char ** text) {
-        int fileDescriptor = open(FileName, O_RDONLY);
-        struct stat st;
-        fstat(fileDescriptor, &st);
-        auto fullTextSize = static_cast<size_t>(st.st_size);
-        (*text) = new char[fullTextSize + 1]; // Maybe - maybe
-        read(fileDescriptor, *text, fullTextSize);
-        close(fileDescriptor);
+        FILE *f = fopen(FileName, "rb");
+        fseek(f, 0, SEEK_END);
+        size_t size = static_cast<size_t>(ftell(f));
+        fseek(f, 0, SEEK_SET);
+        (*text) = new char[size + 1];
+        fread(*text, size, 1, f);
+        (*text)[size] = 0;
+        fclose(f);
     }
 
     size_t changeSlashesToNulles(char *text, size_t ** indexes) {

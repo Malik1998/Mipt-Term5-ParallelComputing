@@ -16,3 +16,11 @@ CMakeFiles/Summator.dir/main.cpp.o: ../LongSum/LongSum.h
 CMakeFiles/Summator.dir/main.cpp.o: ../Summator/Summator.h
 CMakeFiles/Summator.dir/main.cpp.o: ../main.cpp
 
+CMakeFiles/Summator.dir/tests/TimeElapser/TimeElapser.cpp.o: ../LongSum/LongSum.h
+CMakeFiles/Summator.dir/tests/TimeElapser/TimeElapser.cpp.o: ../Summator/Summator.h
+CMakeFiles/Summator.dir/tests/TimeElapser/TimeElapser.cpp.o: ../tests/TimeElapser/TimeElapser.cpp
+CMakeFiles/Summator.dir/tests/TimeElapser/TimeElapser.cpp.o: ../tests/testGenerator/testGenerator.cpp
+
+CMakeFiles/Summator.dir/tests/testGenerator/testGenerator.cpp.o: ../LongSum/LongSum.h
+CMakeFiles/Summator.dir/tests/testGenerator/testGenerator.cpp.o: ../tests/testGenerator/testGenerator.cpp
+

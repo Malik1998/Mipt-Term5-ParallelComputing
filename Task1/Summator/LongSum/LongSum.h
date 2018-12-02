@@ -6,8 +6,9 @@
 #define SUMMATOR_LONGSUM_H
 
 #include <glob.h>
+#include <string>
 
-#define MAX_LENGTH 10
+#define MAX_LENGTH 100000
 #define MOD 100
 
 class LongSum {
@@ -18,7 +19,7 @@ public:
     LongSum();
     void Add(int* number, size_t length);
     int *getSum();
-
+    std::string toString();
     void show();
 };
 

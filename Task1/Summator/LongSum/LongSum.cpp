@@ -21,6 +21,10 @@ void LongSum::Add(int *number, size_t length) {
         if (k < 0 && ost == 0) { // Methods of Optimizations
             break;
         }
+
+        if (i == 0) {
+            break;
+        }
     }
 }
 
@@ -54,4 +58,27 @@ LongSum::LongSum() {
         sum[i] = 0;
     }
 
+}
+
+std::string LongSum::toString() {
+    std::string result;
+    bool isFirst = true;
+    bool isNumber = false;
+    for (size_t i = 0; i < MAX_LENGTH; i++) {
+        if (sum[i] != 0) {
+            isNumber = true;
+        }
+        if (isNumber) {
+            if (sum[i] < 10) {
+                if (!isFirst) {
+                    result += "0";
+                }
+            }
+
+            result += std::to_string(sum[i]);
+
+            isFirst = false;
+        }
+    }
+    return result;
 }

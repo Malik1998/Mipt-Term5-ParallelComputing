@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named SummatorTest
+
+# Build rule for target.
+SummatorTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 SummatorTest
+.PHONY : SummatorTest
+
+# fast build rule for target.
+SummatorTest/fast:
+	$(MAKE) -f CMakeFiles/SummatorTest.dir/build.make CMakeFiles/SummatorTest.dir/build
+.PHONY : SummatorTest/fast
+
+#=============================================================================
 # Target rules for targets named Summator
 
 # Build rule for target.
@@ -123,13 +136,28 @@ Summator/fast:
 	$(MAKE) -f CMakeFiles/Summator.dir/build.make CMakeFiles/Summator.dir/build
 .PHONY : Summator/fast
 
+#=============================================================================
+# Target rules for targets named GraphTimeElapser
+
+# Build rule for target.
+GraphTimeElapser: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 GraphTimeElapser
+.PHONY : GraphTimeElapser
+
+# fast build rule for target.
+GraphTimeElapser/fast:
+	$(MAKE) -f CMakeFiles/GraphTimeElapser.dir/build.make CMakeFiles/GraphTimeElapser.dir/build
+.PHONY : GraphTimeElapser/fast
+
 LongSum/LongSum.o: LongSum/LongSum.cpp.o
 
 .PHONY : LongSum/LongSum.o
 
 # target to build an object file
 LongSum/LongSum.cpp.o:
+	$(MAKE) -f CMakeFiles/SummatorTest.dir/build.make CMakeFiles/SummatorTest.dir/LongSum/LongSum.cpp.o
 	$(MAKE) -f CMakeFiles/Summator.dir/build.make CMakeFiles/Summator.dir/LongSum/LongSum.cpp.o
+	$(MAKE) -f CMakeFiles/GraphTimeElapser.dir/build.make CMakeFiles/GraphTimeElapser.dir/LongSum/LongSum.cpp.o
 .PHONY : LongSum/LongSum.cpp.o
 
 LongSum/LongSum.i: LongSum/LongSum.cpp.i
@@ -138,7 +166,9 @@ LongSum/LongSum.i: LongSum/LongSum.cpp.i
 
 # target to preprocess a source file
 LongSum/LongSum.cpp.i:
+	$(MAKE) -f CMakeFiles/SummatorTest.dir/build.make CMakeFiles/SummatorTest.dir/LongSum/LongSum.cpp.i
 	$(MAKE) -f CMakeFiles/Summator.dir/build.make CMakeFiles/Summator.dir/LongSum/LongSum.cpp.i
+	$(MAKE) -f CMakeFiles/GraphTimeElapser.dir/build.make CMakeFiles/GraphTimeElapser.dir/LongSum/LongSum.cpp.i
 .PHONY : LongSum/LongSum.cpp.i
 
 LongSum/LongSum.s: LongSum/LongSum.cpp.s
@@ -147,7 +177,9 @@ LongSum/LongSum.s: LongSum/LongSum.cpp.s
 
 # target to generate assembly for a file
 LongSum/LongSum.cpp.s:
+	$(MAKE) -f CMakeFiles/SummatorTest.dir/build.make CMakeFiles/SummatorTest.dir/LongSum/LongSum.cpp.s
 	$(MAKE) -f CMakeFiles/Summator.dir/build.make CMakeFiles/Summator.dir/LongSum/LongSum.cpp.s
+	$(MAKE) -f CMakeFiles/GraphTimeElapser.dir/build.make CMakeFiles/GraphTimeElapser.dir/LongSum/LongSum.cpp.s
 .PHONY : LongSum/LongSum.cpp.s
 
 ReadFullFile/FullFileReader.o: ReadFullFile/FullFileReader.cpp.o
@@ -156,7 +188,9 @@ ReadFullFile/FullFileReader.o: ReadFullFile/FullFileReader.cpp.o
 
 # target to build an object file
 ReadFullFile/FullFileReader.cpp.o:
+	$(MAKE) -f CMakeFiles/SummatorTest.dir/build.make CMakeFiles/SummatorTest.dir/ReadFullFile/FullFileReader.cpp.o
 	$(MAKE) -f CMakeFiles/Summator.dir/build.make CMakeFiles/Summator.dir/ReadFullFile/FullFileReader.cpp.o
+	$(MAKE) -f CMakeFiles/GraphTimeElapser.dir/build.make CMakeFiles/GraphTimeElapser.dir/ReadFullFile/FullFileReader.cpp.o
 .PHONY : ReadFullFile/FullFileReader.cpp.o
 
 ReadFullFile/FullFileReader.i: ReadFullFile/FullFileReader.cpp.i
@@ -165,7 +199,9 @@ ReadFullFile/FullFileReader.i: ReadFullFile/FullFileReader.cpp.i
 
 # target to preprocess a source file
 ReadFullFile/FullFileReader.cpp.i:
+	$(MAKE) -f CMakeFiles/SummatorTest.dir/build.make CMakeFiles/SummatorTest.dir/ReadFullFile/FullFileReader.cpp.i
 	$(MAKE) -f CMakeFiles/Summator.dir/build.make CMakeFiles/Summator.dir/ReadFullFile/FullFileReader.cpp.i
+	$(MAKE) -f CMakeFiles/GraphTimeElapser.dir/build.make CMakeFiles/GraphTimeElapser.dir/ReadFullFile/FullFileReader.cpp.i
 .PHONY : ReadFullFile/FullFileReader.cpp.i
 
 ReadFullFile/FullFileReader.s: ReadFullFile/FullFileReader.cpp.s
@@ -174,7 +210,9 @@ ReadFullFile/FullFileReader.s: ReadFullFile/FullFileReader.cpp.s
 
 # target to generate assembly for a file
 ReadFullFile/FullFileReader.cpp.s:
+	$(MAKE) -f CMakeFiles/SummatorTest.dir/build.make CMakeFiles/SummatorTest.dir/ReadFullFile/FullFileReader.cpp.s
 	$(MAKE) -f CMakeFiles/Summator.dir/build.make CMakeFiles/Summator.dir/ReadFullFile/FullFileReader.cpp.s
+	$(MAKE) -f CMakeFiles/GraphTimeElapser.dir/build.make CMakeFiles/GraphTimeElapser.dir/ReadFullFile/FullFileReader.cpp.s
 .PHONY : ReadFullFile/FullFileReader.cpp.s
 
 Summator/Summator.o: Summator/Summator.cpp.o
@@ -183,7 +221,9 @@ Summator/Summator.o: Summator/Summator.cpp.o
 
 # target to build an object file
 Summator/Summator.cpp.o:
+	$(MAKE) -f CMakeFiles/SummatorTest.dir/build.make CMakeFiles/SummatorTest.dir/Summator/Summator.cpp.o
 	$(MAKE) -f CMakeFiles/Summator.dir/build.make CMakeFiles/Summator.dir/Summator/Summator.cpp.o
+	$(MAKE) -f CMakeFiles/GraphTimeElapser.dir/build.make CMakeFiles/GraphTimeElapser.dir/Summator/Summator.cpp.o
 .PHONY : Summator/Summator.cpp.o
 
 Summator/Summator.i: Summator/Summator.cpp.i
@@ -192,7 +232,9 @@ Summator/Summator.i: Summator/Summator.cpp.i
 
 # target to preprocess a source file
 Summator/Summator.cpp.i:
+	$(MAKE) -f CMakeFiles/SummatorTest.dir/build.make CMakeFiles/SummatorTest.dir/Summator/Summator.cpp.i
 	$(MAKE) -f CMakeFiles/Summator.dir/build.make CMakeFiles/Summator.dir/Summator/Summator.cpp.i
+	$(MAKE) -f CMakeFiles/GraphTimeElapser.dir/build.make CMakeFiles/GraphTimeElapser.dir/Summator/Summator.cpp.i
 .PHONY : Summator/Summator.cpp.i
 
 Summator/Summator.s: Summator/Summator.cpp.s
@@ -201,7 +243,9 @@ Summator/Summator.s: Summator/Summator.cpp.s
 
 # target to generate assembly for a file
 Summator/Summator.cpp.s:
+	$(MAKE) -f CMakeFiles/SummatorTest.dir/build.make CMakeFiles/SummatorTest.dir/Summator/Summator.cpp.s
 	$(MAKE) -f CMakeFiles/Summator.dir/build.make CMakeFiles/Summator.dir/Summator/Summator.cpp.s
+	$(MAKE) -f CMakeFiles/GraphTimeElapser.dir/build.make CMakeFiles/GraphTimeElapser.dir/Summator/Summator.cpp.s
 .PHONY : Summator/Summator.cpp.s
 
 main.o: main.cpp.o
@@ -231,6 +275,90 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Summator.dir/build.make CMakeFiles/Summator.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+tests/SummatorTest/SummatorTest.o: tests/SummatorTest/SummatorTest.cpp.o
+
+.PHONY : tests/SummatorTest/SummatorTest.o
+
+# target to build an object file
+tests/SummatorTest/SummatorTest.cpp.o:
+	$(MAKE) -f CMakeFiles/SummatorTest.dir/build.make CMakeFiles/SummatorTest.dir/tests/SummatorTest/SummatorTest.cpp.o
+.PHONY : tests/SummatorTest/SummatorTest.cpp.o
+
+tests/SummatorTest/SummatorTest.i: tests/SummatorTest/SummatorTest.cpp.i
+
+.PHONY : tests/SummatorTest/SummatorTest.i
+
+# target to preprocess a source file
+tests/SummatorTest/SummatorTest.cpp.i:
+	$(MAKE) -f CMakeFiles/SummatorTest.dir/build.make CMakeFiles/SummatorTest.dir/tests/SummatorTest/SummatorTest.cpp.i
+.PHONY : tests/SummatorTest/SummatorTest.cpp.i
+
+tests/SummatorTest/SummatorTest.s: tests/SummatorTest/SummatorTest.cpp.s
+
+.PHONY : tests/SummatorTest/SummatorTest.s
+
+# target to generate assembly for a file
+tests/SummatorTest/SummatorTest.cpp.s:
+	$(MAKE) -f CMakeFiles/SummatorTest.dir/build.make CMakeFiles/SummatorTest.dir/tests/SummatorTest/SummatorTest.cpp.s
+.PHONY : tests/SummatorTest/SummatorTest.cpp.s
+
+tests/TimeElapser/TimeElapser.o: tests/TimeElapser/TimeElapser.cpp.o
+
+.PHONY : tests/TimeElapser/TimeElapser.o
+
+# target to build an object file
+tests/TimeElapser/TimeElapser.cpp.o:
+	$(MAKE) -f CMakeFiles/Summator.dir/build.make CMakeFiles/Summator.dir/tests/TimeElapser/TimeElapser.cpp.o
+	$(MAKE) -f CMakeFiles/GraphTimeElapser.dir/build.make CMakeFiles/GraphTimeElapser.dir/tests/TimeElapser/TimeElapser.cpp.o
+.PHONY : tests/TimeElapser/TimeElapser.cpp.o
+
+tests/TimeElapser/TimeElapser.i: tests/TimeElapser/TimeElapser.cpp.i
+
+.PHONY : tests/TimeElapser/TimeElapser.i
+
+# target to preprocess a source file
+tests/TimeElapser/TimeElapser.cpp.i:
+	$(MAKE) -f CMakeFiles/Summator.dir/build.make CMakeFiles/Summator.dir/tests/TimeElapser/TimeElapser.cpp.i
+	$(MAKE) -f CMakeFiles/GraphTimeElapser.dir/build.make CMakeFiles/GraphTimeElapser.dir/tests/TimeElapser/TimeElapser.cpp.i
+.PHONY : tests/TimeElapser/TimeElapser.cpp.i
+
+tests/TimeElapser/TimeElapser.s: tests/TimeElapser/TimeElapser.cpp.s
+
+.PHONY : tests/TimeElapser/TimeElapser.s
+
+# target to generate assembly for a file
+tests/TimeElapser/TimeElapser.cpp.s:
+	$(MAKE) -f CMakeFiles/Summator.dir/build.make CMakeFiles/Summator.dir/tests/TimeElapser/TimeElapser.cpp.s
+	$(MAKE) -f CMakeFiles/GraphTimeElapser.dir/build.make CMakeFiles/GraphTimeElapser.dir/tests/TimeElapser/TimeElapser.cpp.s
+.PHONY : tests/TimeElapser/TimeElapser.cpp.s
+
+tests/testGenerator/testGenerator.o: tests/testGenerator/testGenerator.cpp.o
+
+.PHONY : tests/testGenerator/testGenerator.o
+
+# target to build an object file
+tests/testGenerator/testGenerator.cpp.o:
+	$(MAKE) -f CMakeFiles/Summator.dir/build.make CMakeFiles/Summator.dir/tests/testGenerator/testGenerator.cpp.o
+.PHONY : tests/testGenerator/testGenerator.cpp.o
+
+tests/testGenerator/testGenerator.i: tests/testGenerator/testGenerator.cpp.i
+
+.PHONY : tests/testGenerator/testGenerator.i
+
+# target to preprocess a source file
+tests/testGenerator/testGenerator.cpp.i:
+	$(MAKE) -f CMakeFiles/Summator.dir/build.make CMakeFiles/Summator.dir/tests/testGenerator/testGenerator.cpp.i
+.PHONY : tests/testGenerator/testGenerator.cpp.i
+
+tests/testGenerator/testGenerator.s: tests/testGenerator/testGenerator.cpp.s
+
+.PHONY : tests/testGenerator/testGenerator.s
+
+# target to generate assembly for a file
+tests/testGenerator/testGenerator.cpp.s:
+	$(MAKE) -f CMakeFiles/Summator.dir/build.make CMakeFiles/Summator.dir/tests/testGenerator/testGenerator.cpp.s
+.PHONY : tests/testGenerator/testGenerator.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -238,8 +366,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... SummatorTest"
 	@echo "... edit_cache"
 	@echo "... Summator"
+	@echo "... GraphTimeElapser"
 	@echo "... LongSum/LongSum.o"
 	@echo "... LongSum/LongSum.i"
 	@echo "... LongSum/LongSum.s"
@@ -252,6 +382,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... tests/SummatorTest/SummatorTest.o"
+	@echo "... tests/SummatorTest/SummatorTest.i"
+	@echo "... tests/SummatorTest/SummatorTest.s"
+	@echo "... tests/TimeElapser/TimeElapser.o"
+	@echo "... tests/TimeElapser/TimeElapser.i"
+	@echo "... tests/TimeElapser/TimeElapser.s"
+	@echo "... tests/testGenerator/testGenerator.o"
+	@echo "... tests/testGenerator/testGenerator.i"
+	@echo "... tests/testGenerator/testGenerator.s"
 .PHONY : help
 
 

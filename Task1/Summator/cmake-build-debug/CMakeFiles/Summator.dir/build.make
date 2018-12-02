@@ -109,12 +109,40 @@ CMakeFiles/Summator.dir/ReadFullFile/FullFileReader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Summator.dir/ReadFullFile/FullFileReader.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/ReadFullFile/FullFileReader.cpp -o CMakeFiles/Summator.dir/ReadFullFile/FullFileReader.cpp.s
 
+CMakeFiles/Summator.dir/tests/testGenerator/testGenerator.cpp.o: CMakeFiles/Summator.dir/flags.make
+CMakeFiles/Summator.dir/tests/testGenerator/testGenerator.cpp.o: ../tests/testGenerator/testGenerator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Summator.dir/tests/testGenerator/testGenerator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Summator.dir/tests/testGenerator/testGenerator.cpp.o -c /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/tests/testGenerator/testGenerator.cpp
+
+CMakeFiles/Summator.dir/tests/testGenerator/testGenerator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Summator.dir/tests/testGenerator/testGenerator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/tests/testGenerator/testGenerator.cpp > CMakeFiles/Summator.dir/tests/testGenerator/testGenerator.cpp.i
+
+CMakeFiles/Summator.dir/tests/testGenerator/testGenerator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Summator.dir/tests/testGenerator/testGenerator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/tests/testGenerator/testGenerator.cpp -o CMakeFiles/Summator.dir/tests/testGenerator/testGenerator.cpp.s
+
+CMakeFiles/Summator.dir/tests/TimeElapser/TimeElapser.cpp.o: CMakeFiles/Summator.dir/flags.make
+CMakeFiles/Summator.dir/tests/TimeElapser/TimeElapser.cpp.o: ../tests/TimeElapser/TimeElapser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Summator.dir/tests/TimeElapser/TimeElapser.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Summator.dir/tests/TimeElapser/TimeElapser.cpp.o -c /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/tests/TimeElapser/TimeElapser.cpp
+
+CMakeFiles/Summator.dir/tests/TimeElapser/TimeElapser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Summator.dir/tests/TimeElapser/TimeElapser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/tests/TimeElapser/TimeElapser.cpp > CMakeFiles/Summator.dir/tests/TimeElapser/TimeElapser.cpp.i
+
+CMakeFiles/Summator.dir/tests/TimeElapser/TimeElapser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Summator.dir/tests/TimeElapser/TimeElapser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/tests/TimeElapser/TimeElapser.cpp -o CMakeFiles/Summator.dir/tests/TimeElapser/TimeElapser.cpp.s
+
 # Object files for target Summator
 Summator_OBJECTS = \
 "CMakeFiles/Summator.dir/main.cpp.o" \
 "CMakeFiles/Summator.dir/LongSum/LongSum.cpp.o" \
 "CMakeFiles/Summator.dir/Summator/Summator.cpp.o" \
-"CMakeFiles/Summator.dir/ReadFullFile/FullFileReader.cpp.o"
+"CMakeFiles/Summator.dir/ReadFullFile/FullFileReader.cpp.o" \
+"CMakeFiles/Summator.dir/tests/testGenerator/testGenerator.cpp.o" \
+"CMakeFiles/Summator.dir/tests/TimeElapser/TimeElapser.cpp.o"
 
 # External object files for target Summator
 Summator_EXTERNAL_OBJECTS =
@@ -123,9 +151,11 @@ Summator: CMakeFiles/Summator.dir/main.cpp.o
 Summator: CMakeFiles/Summator.dir/LongSum/LongSum.cpp.o
 Summator: CMakeFiles/Summator.dir/Summator/Summator.cpp.o
 Summator: CMakeFiles/Summator.dir/ReadFullFile/FullFileReader.cpp.o
+Summator: CMakeFiles/Summator.dir/tests/testGenerator/testGenerator.cpp.o
+Summator: CMakeFiles/Summator.dir/tests/TimeElapser/TimeElapser.cpp.o
 Summator: CMakeFiles/Summator.dir/build.make
 Summator: CMakeFiles/Summator.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Summator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Summator"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Summator.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

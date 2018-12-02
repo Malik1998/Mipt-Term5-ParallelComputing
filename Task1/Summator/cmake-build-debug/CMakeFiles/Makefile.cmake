@@ -14,7 +14,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/user/IDE/clion-2018.2.4/bin/cmake/linux/share/cmake-3.12/Modules/CMakeCInformation.cmake"
   "/home/user/IDE/clion-2018.2.4/bin/cmake/linux/share/cmake-3.12/Modules/CMakeCXXInformation.cmake"
   "/home/user/IDE/clion-2018.2.4/bin/cmake/linux/share/cmake-3.12/Modules/CMakeCommonLanguageInclude.cmake"
-  "/home/user/IDE/clion-2018.2.4/bin/cmake/linux/share/cmake-3.12/Modules/CMakeConfigurableFile.in"
   "/home/user/IDE/clion-2018.2.4/bin/cmake/linux/share/cmake-3.12/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake"
   "/home/user/IDE/clion-2018.2.4/bin/cmake/linux/share/cmake-3.12/Modules/CMakeFindCodeBlocks.cmake"
   "/home/user/IDE/clion-2018.2.4/bin/cmake/linux/share/cmake-3.12/Modules/CMakeGenericSystem.cmake"
@@ -22,8 +21,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/user/IDE/clion-2018.2.4/bin/cmake/linux/share/cmake-3.12/Modules/CMakeLanguageInformation.cmake"
   "/home/user/IDE/clion-2018.2.4/bin/cmake/linux/share/cmake-3.12/Modules/CMakeSystemSpecificInformation.cmake"
   "/home/user/IDE/clion-2018.2.4/bin/cmake/linux/share/cmake-3.12/Modules/CMakeSystemSpecificInitialize.cmake"
-  "/home/user/IDE/clion-2018.2.4/bin/cmake/linux/share/cmake-3.12/Modules/CheckFunctionExists.c"
-  "/home/user/IDE/clion-2018.2.4/bin/cmake/linux/share/cmake-3.12/Modules/CheckIncludeFile.c.in"
   "/home/user/IDE/clion-2018.2.4/bin/cmake/linux/share/cmake-3.12/Modules/CheckIncludeFile.cmake"
   "/home/user/IDE/clion-2018.2.4/bin/cmake/linux/share/cmake-3.12/Modules/CheckLibraryExists.cmake"
   "/home/user/IDE/clion-2018.2.4/bin/cmake/linux/share/cmake-3.12/Modules/CheckSymbolExists.cmake"
@@ -55,5 +52,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/SummatorTest.dir/DependInfo.cmake"
   "CMakeFiles/Summator.dir/DependInfo.cmake"
+  "CMakeFiles/GraphTimeElapser.dir/DependInfo.cmake"
   )
