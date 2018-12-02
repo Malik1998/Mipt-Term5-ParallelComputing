@@ -1,0 +1,3 @@
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task2/MatrixMultiplier/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task2/MatrixMultiplier/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task2/MatrixMultiplier/cmake-build-debug/CMakeFiles/MatrixMultiplier.dir
