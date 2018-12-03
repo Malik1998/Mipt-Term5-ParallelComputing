@@ -1,0 +1,4 @@
+/home/user/IDE/clion-2018.2.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/cmake-build-debug

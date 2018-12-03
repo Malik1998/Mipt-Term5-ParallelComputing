@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/GraphTimeElapser.dir/tests/TimeElapser/TimeElapser.cpp.o CMakeFiles/GraphTimeElapser.dir/LongSum/LongSum.cpp.o CMakeFiles/GraphTimeElapser.dir/Summator/Summator.cpp.o CMakeFiles/GraphTimeElapser.dir/ReadFullFile/FullFileReader.cpp.o  -o GraphTimeElapser -lpthread -lgtest -lgtest_main -lpthread 
