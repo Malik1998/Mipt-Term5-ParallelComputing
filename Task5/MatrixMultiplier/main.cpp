@@ -6,7 +6,7 @@ void read_Matrix(const char *fileName, double ***matrix, size_t& i, size_t& i1);
 
 void write_matrix(const char *filename, double **Matrix, size_t i, size_t i1);
 
-void delete_matrix(double **Matrix, size_t n);
+void delete_matrix(double ***Matrix, size_t n);
 
 int main(int argc, char **argv) {
 
@@ -30,7 +30,7 @@ int main(int argc, char **argv) {
 
     for (size_t i = 0; i < nA; i++) {
 
-        #pragma omp parallel for
+#pragma omp parallel for
 
         for (size_t j = 0; j < kB; j++) {
             double c_ij = 0;
@@ -43,21 +43,20 @@ int main(int argc, char **argv) {
 
     write_matrix(argv[3], MatrixC, nA, kB);
 
-    delete_matrix(MatrixA, nA);
-    delete[] MatrixA;
+    delete_matrix(&MatrixA, nA);
 
-    delete_matrix(MatrixB, nB);
-    delete[] MatrixB;
+    delete_matrix(&MatrixB, nB);
 
-    delete_matrix(MatrixB, nA);
-    delete[] MatrixC;
+    delete_matrix(&MatrixC, nA);
 
 }
 
-void delete_matrix(double **Matrix, size_t n) {
+void delete_matrix(double ***Matrix, size_t n) {
     for (size_t i = 0; i < n; i++) {
-        delete[] Matrix[i];
+        delete[] (*Matrix)[i];
     }
+
+    delete[] (*Matrix);
 }
 
 void write_matrix(const char *filename, double **Matrix, size_t n, size_t k) {
@@ -91,3 +90,4 @@ void read_Matrix(const char *fileName, double ***matrix, size_t &n, size_t &k) {
 
     file.close();
 }
+

@@ -14,8 +14,6 @@ class Summator {
 
     struct Bounds {
         Summator* summator;
-        int *newNumber;
-        LongSum *longSum;
         size_t left;
         size_t right;
 

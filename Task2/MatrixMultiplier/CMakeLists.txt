@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 3.12)
-project(MatrixMultiplier)
+cmake_minimum_required(VERSION 2.8.12.2)
+project(MatrixMultiply)
 
 set(CMAKE_CXX_STANDARD 14)
 
@@ -10,4 +10,8 @@ if (OPENMP_FOUND)
     set (CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${OpenMP_EXE_LINKER_FLAGS}")
 endif()
 
-add_executable(MatrixMultiplier main.cpp)
+add_executable(MatrixMultiply1 main.cpp MatrixMultiply/MatrixMultiplier.cpp MatrixMultiply/MatrixMultiplier.h MatrixMultiply/MatrixMultiplier.cpp MatrixMultiply/MatrixMultiplier.h)
+add_executable(GraphDrawer TimeElapser/TimeElapser.cpp MatrixMultiply/MatrixMultiplier.cpp MatrixMultiply/MatrixMultiplier.h
+        MatrixMultiply/MatrixMultiplier.cpp MatrixMultiply/MatrixMultiplier.h)
+
+target_link_libraries (GraphDrawer ${CMAKE_THREAD_LIBS_INIT} pthread)

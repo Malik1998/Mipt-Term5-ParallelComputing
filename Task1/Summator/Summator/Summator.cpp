@@ -26,21 +26,13 @@ int Summator::calculate() {
     }
 
     pthread_t *ThreadPool = new pthread_t[count_of_threads];
-    int ** newNumbers = new int*[count_of_threads];
-    LongSum** pLongSum = new LongSum*[count_of_threads];
-    Bounds** bounds = new Bounds*[count_of_threads];
+    Bounds **bounds = new Bounds*[count_of_threads];
 
     size_t previos_end = 0;
 
     for (size_t i = 0; i < count_of_threads; i++) {
         size_t nextBound = getNextBound(previos_end, i);
         bounds[i] = new Bounds(previos_end + 1, nextBound, this);
-        newNumbers[i] = new int[MAX_LENGTH];
-        pLongSum[i] = new LongSum();
-
-        bounds[i]->newNumber = newNumbers[i];
-        bounds[i]->longSum = pLongSum[i];
-
         previos_end = nextBound;
 
         if (i == 0) {
@@ -59,13 +51,9 @@ int Summator::calculate() {
             return 3;
         }
         delete bounds[i];
-        delete newNumbers[i];
-        delete pLongSum[i];
     }
 
     delete[] bounds;
-    delete[] newNumbers;
-    delete[] pLongSum;
     delete[] ThreadPool;
 
     return 0;
@@ -73,19 +61,20 @@ int Summator::calculate() {
 
 void *Summator::calculatePart(void *params) {
     Bounds *bounds = static_cast<Bounds*>(params);
-    LongSum *longSum = bounds->longSum;
-    int *new_number = bounds->newNumber;
+    LongSum longSum;
 
-   // std::cout << bounds->left << " " << bounds->right << std::endl;
-  //s  std::cout << bounds->summator->text[bounds->left] << " to " << bounds->summator->text[bounds->right] << std::endl;
+  //  std::cout << bounds->left << " " << bounds->right << std::endl;
+  //  std::cout << bounds->summator->text[bounds->left] << " to " << bounds->summator->text[bounds->right] << std::endl;
     size_t size_of_number = 0;
     size_t previos_start = bounds->right - 1;
+    int new_number[MAX_LENGTH];
     for (size_t i = bounds->right - 1; i >= bounds->left; i--) {
+       // std::fill(new_number, new_number + MAX_LENGTH, 0);
         if (bounds->summator->text[i] == '\n') {
             size_t size_of_array = size_of_number / 2 + size_of_number % 2;
             if (size_of_array != 0) {
                 make_number(new_number + MAX_LENGTH - size_of_array - 1, bounds->summator->text + previos_start, size_of_number, size_of_array);
-                longSum->Add(new_number + MAX_LENGTH - size_of_array - 1, size_of_array);
+                longSum.Add(new_number + MAX_LENGTH - size_of_array - 1, size_of_array);
             }
             size_of_number = 0;
             previos_start = i - 1;
@@ -101,12 +90,12 @@ void *Summator::calculatePart(void *params) {
     if (size_of_array != 0) {
 
         make_number(new_number + MAX_LENGTH - size_of_array - 1, bounds->summator->text + previos_start, size_of_number, size_of_array);
-        longSum->Add(new_number + MAX_LENGTH - size_of_array - 1, size_of_array);
+        longSum.Add(new_number + MAX_LENGTH - size_of_array - 1, size_of_array);
     }
 
     pthread_mutex_lock(&bounds->summator->lock);
 
-    bounds->summator->longSum.Add(longSum->getSum(), MAX_LENGTH);
+    bounds->summator->longSum.Add(longSum.getSum(), MAX_LENGTH);
 
     pthread_mutex_unlock(&bounds->summator->lock);
 }
