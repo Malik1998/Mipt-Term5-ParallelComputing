@@ -4,7 +4,9 @@
 int main(int argc, char **argv) {
     int number = atoi(argv[2]);
 
-    Summator summator(argv[1], number);
+    int error = 0;
+
+    Summator summator(argv[1], number, error);
 
     int errorCode = summator.calculate();
 

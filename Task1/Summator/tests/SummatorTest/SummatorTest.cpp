@@ -8,12 +8,15 @@
 #include "../testGenerator/testGenerator.cpp"
 #include "../../Summator/Summator.h"
 #include <ctime>
+#include <time.h>
 
 
 TEST(SummatorTest, SimpleTest1) {
 
-    size_t count_threads = 1;
-    Summator summator("numbers.txt", count_threads);
+    int count_threads = 1;
+    int error;
+    Summator summator("numbers.txt", count_threads, error);
+    ASSERT_EQ(error, 0);
 
     int errorCode = summator.calculate();
 
@@ -23,14 +26,20 @@ TEST(SummatorTest, SimpleTest1) {
         std::cerr << "Error while calculating" << std::endl;
     }
 
-    ASSERT_EQ(summator.getSum().toString(), "210");
+    std::string a;
+    summator.getSumString(a);
+    ASSERT_EQ(a, "210");
 }
 
 TEST(SummatorTest, SimpleTestGeneration100_10_1) {
 
-    size_t count_threads = 1;
+    int count_threads = 1;
     std::string answer = testGenerator::generate("SimpleTestGeneration100_10_1.txt", 100, 10);
-    Summator summator("SimpleTestGeneration100_10_1.txt", count_threads);
+
+    int error;
+    Summator summator("SimpleTestGeneration100_10_1.txt", count_threads, error);
+    ASSERT_EQ(error, 0);
+
 
     int errorCode = summator.calculate();
 
@@ -40,14 +49,21 @@ TEST(SummatorTest, SimpleTestGeneration100_10_1) {
         std::cerr << "Error while calculating" << std::endl;
     }
 
-    ASSERT_EQ(summator.getSum().toString(), answer);
+    std::string a;
+    summator.getSum().toString(a);
+    ASSERT_EQ(a, answer);
 }
 
 TEST(SummatorTest, FewThreadsSimpleTestGeneration100_10_1) {
 
-    size_t count_threads = 5;
+    int count_threads = 5;
+
     std::string answer = testGenerator::generate("FewThreadsSimpleTestGeneration100_10_1.txt", 100, 10);
-    Summator summator("FewThreadsSimpleTestGeneration100_10_1.txt", count_threads);
+
+    int error;
+    Summator summator("FewThreadsSimpleTestGeneration100_10_1.txt", count_threads, error);
+    ASSERT_EQ(error, 0);
+
 
     int errorCode = summator.calculate();
 
@@ -57,15 +73,20 @@ TEST(SummatorTest, FewThreadsSimpleTestGeneration100_10_1) {
         std::cerr << "Error while calculating" << std::endl;
     }
 
-    ASSERT_EQ(summator.getSum().toString(), answer);
+    std::string a;
+    summator.getSum().toString(a);
+    ASSERT_EQ(a, answer);
 }
 
 
 TEST(SummatorTest, FewThreadsSimpleTestGeneration1000_100_1) {
 
-    size_t count_threads = 10;
-    std::string answer = testGenerator::generate("FewThreadsSimpleTestGeneration1000_100_1.txt", 1000, 100);
-    Summator summator("FewThreadsSimpleTestGeneration1000_100_1.txt", count_threads);
+    int count_threads = 10;
+    std::string answer = testGenerator::generate("FewThreadsSimpleTestGeneration1000_100_1.txt", 10, 1);
+
+    int error;
+    Summator summator("FewThreadsSimpleTestGeneration1000_100_1.txt", count_threads, error);
+    ASSERT_EQ(error, 0);
 
     int errorCode = summator.calculate();
 
@@ -75,15 +96,21 @@ TEST(SummatorTest, FewThreadsSimpleTestGeneration1000_100_1) {
         std::cerr << "Error while calculating" << std::endl;
     }
 
-    ASSERT_EQ(summator.getSum().toString(), answer);
+    std::string a;
+    summator.getSum().toString(a);
+    ASSERT_EQ(a, answer);
 }
 
 
 TEST(SummatorTest, FewThreadsSimpleTestGeneration10000_1000_1) {
 
-    size_t count_threads = 10;
+    int count_threads = 10;
     std::string answer = testGenerator::generate("FewThreadsSimpleTestGeneration10000_1000_1.txt", 10000, 1000);
-    Summator summator("FewThreadsSimpleTestGeneration10000_1000_1.txt", count_threads);
+
+
+    int error;
+    Summator summator("FewThreadsSimpleTestGeneration10000_1000_1.txt", count_threads, error);
+    ASSERT_EQ(error, 0);
 
     int errorCode = summator.calculate();
 
@@ -93,7 +120,9 @@ TEST(SummatorTest, FewThreadsSimpleTestGeneration10000_1000_1) {
         std::cerr << "Error while calculating" << std::endl;
     }
 
-    ASSERT_EQ(summator.getSum().toString(), answer);
+    std::string a;
+    summator.getSum().toString(a);
+    ASSERT_EQ(a, answer);
 }
 
 
@@ -106,7 +135,7 @@ TEST(SummatorTest, GraphDraw) {
     int max_threads = 10;
 
     myfile << "ns = np.array([";
-    for(size_t i = 1; i < max_threads; i++) {
+    for(int i = 1; i < max_threads; i++) {
         myfile << i;
         if (i + 1 != max_threads) {
             myfile << ", ";
@@ -116,16 +145,27 @@ TEST(SummatorTest, GraphDraw) {
 
 
     myfile << "time = np.array([";
-    for (size_t i = 1; i < max_threads; i++) {
-        Summator summator("FewThreadsSimpleTestGeneration10000_1000_1.txt", i);
+    for (int i = 1; i < max_threads; i++) {
+        int error;
+        Summator summator("FewThreadsSimpleTestGeneration10000_1000_1.txt", i, error);
+        ASSERT_EQ(error, 0);
         using namespace std;
-        clock_t begin = clock();
+
+        struct timespec start, finish;
+        double elapsed;
+
+        clock_gettime(CLOCK_MONOTONIC, &start);
+
         int errorCode = summator.calculate();
 
-        clock_t end = clock();
-        double elapsed_secs = double(end - begin) / CLOCKS_PER_SEC;
+        clock_gettime(CLOCK_MONOTONIC, &finish);
 
-        myfile << elapsed_secs;
+        ASSERT_EQ(errorCode, 0);
+
+        elapsed = (finish.tv_sec - start.tv_sec);
+        elapsed += (finish.tv_nsec - start.tv_nsec) / 1000000000.0;
+
+        myfile << elapsed;
         if (i + 1 != max_threads) {
             myfile << ", ";
         }

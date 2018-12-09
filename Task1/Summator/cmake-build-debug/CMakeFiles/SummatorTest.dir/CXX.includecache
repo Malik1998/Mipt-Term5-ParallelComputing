@@ -6,10 +6,32 @@
 
 #IncludeRegexTransform: 
 
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/LongSum/LongSum.cpp
+iostream
+-
+cstring
+-
+LongSum.h
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/LongSum/LongSum.h
+
 /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/LongSum/LongSum.h
 glob.h
 -
 string
+-
+
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/ReadFullFile/FullFileReader.h
+
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/Summator/Summator.cpp
+Summator.h
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/Summator/Summator.h
+../ReadFullFile/FullFileReader.h
+/home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/ReadFullFile/FullFileReader.h
+pthread.h
+-
+iostream
+-
+cstring
 -
 
 /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/Summator/Summator.h
@@ -33,6 +55,8 @@ iostream
 /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/Summator/Summator.h
 ctime
 -
+time.h
+-
 
 /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/tests/testGenerator/testGenerator.cpp
 string
@@ -43,6 +67,8 @@ ctime
 -
 math.h
 /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/tests/testGenerator/math.h
+cstdlib
+-
 ../../LongSum/LongSum.h
 /home/user/Desktop/Studying/MIPT/term_5/raspreds/parall/Mipt-Term5-ParallelComputing/Task1/Summator/LongSum/LongSum.h
 

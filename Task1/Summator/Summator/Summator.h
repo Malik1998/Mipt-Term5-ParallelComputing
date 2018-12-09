@@ -13,33 +13,40 @@
 class Summator {
 
     struct Bounds {
-        Summator* summator;
-        size_t left;
-        size_t right;
+        Summator* summator = nullptr;
+        LongSum* longSum = nullptr;
+        int* new_number = nullptr;
+        int left;
+        int right;
 
-        Bounds(size_t left_, size_t right_, Summator* summator_) : left(left_), right(right_), summator(summator_) {}
+        Bounds(int left_, int right_, Summator* summator_) : left(left_), right(right_), summator(summator_) {}
+
+
     };
 
 private:
-    size_t count_of_threads;
+    int count_of_threads;
     char *text;
-    size_t count_of_lines;
+    int count_of_lines;
+    int max_length;
     LongSum longSum;
-    pthread_mutex_t lock;
 
 public:
-    Summator(const char* filename, size_t count_of_threads_);
+    Summator(const char* filename, int count_of_threads_, int& error);
 
     int calculate();
 
     LongSum getSum();
+    void getSumString(std::string& a);
+
+    ~Summator();
 
 private:
     static void *calculatePart(void *params);
 
-    static void make_number(int *pInt, char *string, size_t i, size_t r);
+    static void make_number(int *pInt, char *string, int i, int r);
 
-    size_t getNextBound(size_t PreviosEnd, size_t threadIndex);
+    int getNextBound(int PreviosEnd, int threadIndex);
 };
 
 

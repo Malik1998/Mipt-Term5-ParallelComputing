@@ -4,7 +4,6 @@
 
 #include <fstream>
 #include <time.h>
-#include <iostream>
 #include "../testGenerator/testGenerator.cpp"
 #include "../MatrixMultiply/MatrixMultiplier.h"
 
@@ -28,13 +27,8 @@ int main(int argc, char **argv) {
 
     myfile << "time = np.array([";
     for (int i = 1; i < max_threads; i++) {
-        int error = 0;
+        int error;
         MatrixMultiplier matrixMultiplier("A.txt", "B.txt", i, error, "C.txt");
-
-        if (error) {
-            std::cerr << "Error occured";
-            return 1;
-        }
 
         struct timespec start, finish;
         double elapsed;

@@ -3,13 +3,17 @@
 //
 
 #include <iostream>
+#include <cstring>
 #include "LongSum.h"
 
-void LongSum::Add(int *number, size_t length) {
+void LongSum::Add(int *number, int length) {
 
     int ost = 0;
     int k = static_cast<int>(length - 1);
-    for (size_t i = MAX_LENGTH - 1; i >= 0; i--, k--) {
+    if (max_length == 0) {
+        return;
+    }
+    for (int i = max_length - 1; i >= 0; i--, k--) {
         sum[i] += ost;
         if (k >= 0) {
             sum[i] += number[k];
@@ -35,7 +39,7 @@ int *LongSum::getSum() {
 void LongSum::show() {
     bool isFirst = true;
     bool isNumber = false;
-    for (size_t i = 0; i < MAX_LENGTH; i++) {
+    for (int i = 0; i < max_length; i++) {
         if (sum[i] != 0) {
             isNumber = true;
         }
@@ -51,20 +55,26 @@ void LongSum::show() {
             isFirst = false;
         }
     }
+    std::cout << std::endl;
 }
 
-LongSum::LongSum() {
-    for(int i = 0; i < MAX_LENGTH; i++) {
-        sum[i] = 0;
+LongSum::LongSum(int max_length_, int &error):max_length(max_length_), sum(nullptr) {
+    if(!(sum = (int *) malloc(max_length * sizeof(int)))) {
+        std::cerr << "Bad alloc" << std::endl;
+        sum = nullptr;
+        error = 1;
+        max_length = 0;
+        return ;
     }
-
+    error = 0;
+    memset(sum, 0, max_length * sizeof(int));
 }
 
-std::string LongSum::toString() {
-    std::string result;
+int LongSum::toString(std::string &result) {
+
     bool isFirst = true;
     bool isNumber = false;
-    for (size_t i = 0; i < MAX_LENGTH; i++) {
+    for (int i = 0; i < max_length; i++) {
         if (sum[i] != 0) {
             isNumber = true;
         }
@@ -80,5 +90,33 @@ std::string LongSum::toString() {
             isFirst = false;
         }
     }
-    return result;
+    return 0;
+}
+
+LongSum::~LongSum() {
+    if (max_length > 0 && sum != nullptr) {
+        free(sum);
+        max_length = 0;
+        sum = nullptr;
+    }
+}
+
+LongSum::LongSum(): max_length(0) {
+    sum = nullptr;
+}
+
+LongSum &LongSum::operator=(const LongSum &longSum_) {
+    if( !(this->sum = (int*)malloc(longSum_.max_length * sizeof(int)))) {
+        this->max_length = 0;
+        this->sum = nullptr;
+        return *this;
+    }
+    this->max_length = longSum_.max_length;
+    std::memcpy(this->sum, longSum_.sum, static_cast<size_t>(longSum_.max_length) * sizeof(int));
+    return *this;
+}
+
+LongSum::LongSum(const LongSum &longSum_) {
+    (*this) = longSum_;
+
 }

@@ -14,4 +14,5 @@ add_executable(MatrixMultiply1 main.cpp MatrixMultiply/MatrixMultiplier.cpp Matr
 add_executable(GraphDrawer TimeElapser/TimeElapser.cpp MatrixMultiply/MatrixMultiplier.cpp MatrixMultiply/MatrixMultiplier.h
         MatrixMultiply/MatrixMultiplier.cpp MatrixMultiply/MatrixMultiplier.h)
 
+target_link_libraries (MatrixMultiply1 ${CMAKE_THREAD_LIBS_INIT} pthread)
 target_link_libraries (GraphDrawer ${CMAKE_THREAD_LIBS_INIT} pthread)

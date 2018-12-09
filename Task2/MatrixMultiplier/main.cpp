@@ -6,8 +6,19 @@
 
 int main(int argc, char **argv) {
 
-    MatrixMultiplier matrixMultiplier(argv[1], argv[2],  atoi(argv[4]), argv[3]);
-    matrixMultiplier.multiply();
+    try {
+        int error;
+        MatrixMultiplier matrixMultiplier(argv[1], argv[2],  1, error, argv[3]);
+        if (!error) {
+            std::cerr << "Some error occured on costructing" << std::endl;
+            return 1;
+        }
+        matrixMultiplier.multiply();
+    } catch (std::bad_alloc &error) {
+        std::cerr << "Exception on Memory allocation";
+    }
+
+
 }
 
 

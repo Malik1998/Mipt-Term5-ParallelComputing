@@ -7,20 +7,26 @@
 
 #include <glob.h>
 #include <string>
-
-#define MAX_LENGTH 100000
 #define MOD 100
 
 class LongSum {
 
-    int sum[MAX_LENGTH];
+private:
+    int *sum = nullptr;
+    int max_length = 0;
 
 public:
+    explicit LongSum(int max_length_, int& error);
     LongSum();
-    void Add(int* number, size_t length);
+    LongSum(const LongSum& longSum_);
+
+    LongSum& operator=(const LongSum& longSum_);
+
+    void Add(int* number, int length);
     int *getSum();
-    std::string toString();
+    int toString(std::string& result);
     void show();
+    ~LongSum();
 };
 
 

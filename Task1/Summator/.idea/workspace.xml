@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/tests/SummatorTest/SummatorTest.cpp" line="27" />
+  </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="Summator" targetName="SummatorTest" />
-      <config projectName="Summator" targetName="Summator" />
       <config projectName="Summator" targetName="GraphTimeElapser" />
+      <config projectName="Summator" targetName="Summator" />
+      <config projectName="Summator" targetName="SummatorTest" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -14,19 +17,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a39187f7-bcd7-46c1-8b92-de5cd7d5a368" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../Task5/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.ipynb_checkpoints/Graphic-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../.ipynb_checkpoints/Graphic-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Graphic.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../Graphic.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Task5/MatrixMultiplier/MatrixMultiplier2/MatrixMultiplier2.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Task5/MatrixMultiplier/MatrixMultiplier2/MatrixMultiplier2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Task5/MatrixMultiplier/testGenerator/GenerateTest.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Task5/MatrixMultiplier/tests/tests.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LongSum/LongSum.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/LongSum/LongSum.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LongSum/LongSum.h" beforeDir="false" afterPath="$PROJECT_DIR$/LongSum/LongSum.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReadFullFile/FullFileReader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ReadFullFile/FullFileReader.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReadFullFile/FullFileReader.h" beforeDir="false" afterPath="$PROJECT_DIR$/ReadFullFile/FullFileReader.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Summator/Summator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Summator/Summator.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Summator/Summator.h" beforeDir="false" afterPath="$PROJECT_DIR$/Summator/Summator.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SummatorTest.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SummatorTest.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SummatorTest.dir/LongSum/LongSum.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SummatorTest.dir/LongSum/LongSum.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SummatorTest.dir/ReadFullFile/FullFileReader.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SummatorTest.dir/ReadFullFile/FullFileReader.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SummatorTest.dir/Summator/Summator.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SummatorTest.dir/Summator/Summator.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SummatorTest.dir/tests/SummatorTest/SummatorTest.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SummatorTest.dir/tests/SummatorTest/SummatorTest.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/FewThreadsSimpleTestGeneration10000_1000_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/FewThreadsSimpleTestGeneration10000_1000_1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/FewThreadsSimpleTestGeneration1000_100_1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/FewThreadsSimpleTestGeneration1000_100_1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/SummatorTest" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SummatorTest" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/graph.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/graph.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task5/.idea/Task5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task5/.idea/Task5.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Task5/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task5/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/SummatorTest/SummatorTest.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/SummatorTest/SummatorTest.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TimeElapser/TimeElapser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/TimeElapser/TimeElapser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/TimeElapser/make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/testGenerator/testGenerator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/tests/testGenerator/testGenerator.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task2/Graphic.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task2/Graphic.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task2/MatrixMultiplier/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task2/MatrixMultiplier/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task2/MatrixMultiplier/MatrixMultiply/MatrixMultiplier.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task2/MatrixMultiplier/MatrixMultiply/MatrixMultiplier.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task2/MatrixMultiplier/MatrixMultiply/MatrixMultiplier.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task2/MatrixMultiplier/MatrixMultiply/MatrixMultiplier.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task2/MatrixMultiplier/TimeElapser/TimeElapser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task2/MatrixMultiplier/TimeElapser/TimeElapser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task2/MatrixMultiplier/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task2/MatrixMultiplier/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task2/MatrixMultiplier/testGenerator/testGenerator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task2/MatrixMultiplier/testGenerator/testGenerator.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task5/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task5/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Task5/MatrixMultiplier/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task5/MatrixMultiplier/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Task5/MatrixMultiplier/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../Task5/MatrixMultiplier/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -41,40 +65,47 @@
     <session id="1594272964">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.19" value="1" />
+          <entry key="project.closed" value="12" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.19" value="2" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.44" value="1" />
+          <entry key="project.open.time.54" value="1" />
+          <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.63" value="1" />
+          <entry key="project.open.time.76" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="FewThreadsSimpleTestGeneration100_10_1 (disassembly)" value="3" />
           <entry key="Summator (disassembly)" value="1" />
-          <entry key="SummatorTest (disassembly)" value="20" />
+          <entry key="SummatorTest (disassembly)" value="44" />
           <entry key="Unnamed (disassembly)" value="2" />
-          <entry key="cpp" value="14" />
-          <entry key="h" value="6" />
+          <entry key="cpp" value="22" />
+          <entry key="h" value="9" />
           <entry key="sh" value="1" />
-          <entry key="txt" value="16" />
+          <entry key="txt" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Bash" value="1" />
           <entry key="CMakeLists.txt" value="1" />
-          <entry key="Disassembly" value="23" />
-          <entry key="ObjectiveC" value="20" />
-          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="Disassembly" value="107" />
+          <entry key="ObjectiveC" value="42" />
+          <entry key="PLAIN_TEXT" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="4328" />
-          <entry key="h" value="517" />
+          <entry key="cpp" value="5615" />
+          <entry key="h" value="626" />
           <entry key="mm" value="128" />
           <entry key="txt" value="143" />
         </counts>
@@ -82,24 +113,24 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CMakeLists.txt" value="69" />
-          <entry key="ObjectiveC" value="4973" />
+          <entry key="ObjectiveC" value="8266" />
           <entry key="PLAIN_TEXT" value="74" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.cidr.testingFrameworks.usages">
         <counts>
-          <entry key="Google Test" value="4" />
+          <entry key="Google Test" value="22" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Summator/Summator.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
+            <state relative-caret-position="437">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="e#39#60#0" expanded="true" />
               </folding>
@@ -108,54 +139,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/testGenerator/testGenerator.cpp">
+        <entry file="file://$PROJECT_DIR$/LongSum/LongSum.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+            <state relative-caret-position="712">
+              <caret line="69" column="45" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
               <folding>
-                <element signature="e#39#56#0" expanded="true" />
+                <element signature="e#39#58#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/SummatorTest/SummatorTest.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/SummatorTest/SummatorTest.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="48" column="98" selection-start-line="48" selection-start-column="98" selection-end-line="48" selection-end-column="98" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmake-build-debug/FewThreadsSimpleTestGeneration100_10_1.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="99" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmake-build-debug/graph.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/TimeElapser/TimeElapser.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="608">
+              <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
               <folding>
                 <element signature="e#39#57#0" expanded="true" />
               </folding>
@@ -164,21 +163,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+        <entry file="file://$PROJECT_DIR$/tests/testGenerator/testGenerator.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+            <state relative-caret-position="323">
+              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+              <folding>
+                <element signature="e#39#56#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Summator/Summator.h">
+        <entry file="file://$PROJECT_DIR$/tests/SummatorTest/SummatorTest.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+            <state relative-caret-position="174">
+              <caret line="98" selection-start-line="98" selection-end-line="98" />
               <folding>
-                <element signature="e#97#115#0" expanded="true" />
+                <element signature="e#39#57#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReadFullFile/FullFileReader.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="532">
+              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+              <folding>
+                <element signature="e#39#56#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -187,10 +201,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LongSum/LongSum.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="231">
+              <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
               <folding>
                 <element signature="e#94#111#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Summator/Summator.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-371">
+              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+              <folding>
+                <element signature="e#97#115#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -202,7 +228,12 @@
     <findStrings>
       <find>count_of_l</find>
       <find>count_of_lines</find>
+      <find>size_t</find>
+      <find>~Lo</find>
     </findStrings>
+    <replaceStrings>
+      <replace>int</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -210,19 +241,20 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/tests/SummatorTest/SummatorTest.h" />
         <option value="$PROJECT_DIR$/cmake-build-debug/numbers.txt" />
-        <option value="$PROJECT_DIR$/ReadFullFile/FullFileReader.cpp" />
         <option value="$PROJECT_DIR$/cmake-build-debug/FewThreadsSimpleTestGeneration100_10_1.txt" />
-        <option value="$PROJECT_DIR$/LongSum/LongSum.cpp" />
-        <option value="$PROJECT_DIR$/LongSum/LongSum.h" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/ReadFullFile/FullFileReader.h" />
         <option value="$PROJECT_DIR$/tests/testGenerator/testGenerator.cpp" />
-        <option value="$PROJECT_DIR$/tests/TimeElapser/TimeElapser.cpp" />
+        <option value="$PROJECT_DIR$/ReadFullFile/FullFileReader.cpp" />
         <option value="$PROJECT_DIR$/Summator/Summator.h" />
-        <option value="$PROJECT_DIR$/Summator/Summator.cpp" />
+        <option value="$PROJECT_DIR$/tests/TimeElapser/TimeElapser.cpp" />
         <option value="$PROJECT_DIR$/tests/SummatorTest/SummatorTest.cpp" />
+        <option value="$PROJECT_DIR$/LongSum/LongSum.h" />
+        <option value="$PROJECT_DIR$/LongSum/LongSum.cpp" />
+        <option value="$PROJECT_DIR$/Summator/Summator.cpp" />
       </list>
     </option>
   </component>
@@ -232,9 +264,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="267" />
-    <option name="y" value="15" />
+    <option name="x" value="-336" />
+    <option name="y" value="324" />
     <option name="width" value="924" />
     <option name="height" value="1032" />
   </component>
@@ -244,7 +277,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -261,11 +293,6 @@
               <item name="Summator" type="b2602c69:ProjectViewProjectNode" />
               <item name="Summator" type="462c0819:PsiDirectoryNode" />
               <item name="LongSum" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Summator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Summator" type="462c0819:PsiDirectoryNode" />
-              <item name="ReadFullFile" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Summator" type="b2602c69:ProjectViewProjectNode" />
@@ -304,6 +331,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -336,6 +364,11 @@
       </method>
     </configuration>
     <configuration name="SummatorTest.GraphDraw" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Summator" TARGET_NAME="SummatorTest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Summator" RUN_TARGET_NAME="SummatorTest" TEST_CLASS="SummatorTest" TEST_METHOD="GraphDraw" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SummatorTest.SimpleTest1" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Summator" TARGET_NAME="SummatorTest" RUN_TARGET_PROJECT_NAME="Summator" RUN_TARGET_NAME="SummatorTest" TEST_CLASS="SummatorTest" TEST_METHOD="SimpleTest1" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -373,10 +406,12 @@
       <item itemvalue="Application.SummatorTest" />
       <item itemvalue="Google Test.SummatorTest.GraphDraw" />
       <item itemvalue="Google Test.SummatorTest.FewThreadsSimpleTestGeneration100_10_1" />
+      <item itemvalue="Google Test.SummatorTest.SimpleTest1" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Google Test.SummatorTest.FewThreadsSimpleTestGeneration100_10_1" />
+        <item itemvalue="Google Test.SummatorTest.SimpleTest1" />
         <item itemvalue="Google Test.SummatorTest.GraphDraw" />
       </list>
     </recent_temporary>
@@ -397,31 +432,57 @@
       <workItem from="1543499952124" duration="15000" />
       <workItem from="1543774232920" duration="1239000" />
       <workItem from="1543835254505" duration="1222000" />
+      <workItem from="1543921956463" duration="1494000" />
+      <workItem from="1543924305839" duration="2025000" />
+      <workItem from="1543955532564" duration="4600000" />
+      <workItem from="1544020585666" duration="466000" />
+      <workItem from="1544021137020" duration="5661000" />
+      <workItem from="1544102334435" duration="597000" />
+      <workItem from="1544103923404" duration="594000" />
+      <workItem from="1544288672191" duration="4328000" />
+      <workItem from="1544302535657" duration="3608000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SummatorTest_GraphDraw - 2018.12.02 at 21h 17m 46s.xml">
-      <configuration name="SummatorTest.GraphDraw" configurationId="CMakeGoogleTestRunConfigurationType" />
-    </history-entry>
-    <history-entry file="SummatorTest_FewThreadsSimpleTestGeneration100_10_1 - 2018.12.03 at 14h 22m 18s.xml">
+    <history-entry file="SummatorTest_FewThreadsSimpleTestGeneration100_10_1 - 2018.12.05 at 00h 11m 55s.xml">
       <configuration name="SummatorTest.FewThreadsSimpleTestGeneration100_10_1" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="SummatorTest_FewThreadsSimpleTestGeneration100_10_1 - 2018.12.03 at 14h 22m 59s.xml">
+    <history-entry file="SummatorTest_FewThreadsSimpleTestGeneration100_10_1 - 2018.12.05 at 00h 13m 00s.xml">
       <configuration name="SummatorTest.FewThreadsSimpleTestGeneration100_10_1" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
-    <history-entry file="SummatorTest_FewThreadsSimpleTestGeneration100_10_1 - 2018.12.03 at 14h 27m 01s.xml">
+    <history-entry file="SummatorTest_SimpleTest1 - 2018.12.05 at 18h 11m 13s.xml">
+      <configuration name="SummatorTest.SimpleTest1" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="SummatorTest_SimpleTest1 - 2018.12.05 at 18h 13m 26s.xml">
+      <configuration name="SummatorTest.SimpleTest1" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="SummatorTest_SimpleTest1 - 2018.12.05 at 18h 15m 25s.xml">
+      <configuration name="SummatorTest.SimpleTest1" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="SummatorTest_SimpleTest1 - 2018.12.05 at 18h 19m 03s.xml">
+      <configuration name="SummatorTest.SimpleTest1" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="SummatorTest_SimpleTest1 - 2018.12.05 at 18h 19m 27s.xml">
+      <configuration name="SummatorTest.SimpleTest1" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="SummatorTest_SimpleTest1 - 2018.12.05 at 18h 20m 34s.xml">
+      <configuration name="SummatorTest.SimpleTest1" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="SummatorTest_SimpleTest1 - 2018.12.05 at 18h 21m 17s.xml">
+      <configuration name="SummatorTest.SimpleTest1" configurationId="CMakeGoogleTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="SummatorTest_FewThreadsSimpleTestGeneration100_10_1 - 2018.12.09 at 00h 37m 41s.xml">
       <configuration name="SummatorTest.FewThreadsSimpleTestGeneration100_10_1" configurationId="CMakeGoogleTestRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17779000" />
+    <option name="totallyTimeSpent" value="41152000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2642344" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29408512" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -433,7 +494,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.3294979" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.33943966" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.3294979" />
@@ -452,16 +513,34 @@
   <component name="XDebuggerManager">
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
-        <watch expression="*text" language="ObjectiveC" />
-        <watch expression="text[i]" language="ObjectiveC" />
-        <watch expression="sum" language="ObjectiveC" />
-        <watch expression="count_of_lines" language="ObjectiveC" />
-        <watch expression="bounds-&gt;summator-&gt;count_of_lines" language="ObjectiveC" />
+        <watch expression="pInt[k]" language="ObjectiveC" />
+        <watch expression="sum[i]" language="ObjectiveC" />
+        <watch expression="number[k]" language="ObjectiveC" />
       </configuration>
     </watches-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>number[k]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>sum[i]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>pInt[k]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>new_number[10]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>bounds-&gt;summator-&gt;count_of_lines</expression-string>
         <language-id>ObjectiveC</language-id>
@@ -492,55 +571,11 @@
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>text[0]</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>*text</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>text[22]</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>text[23]</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ReadFullFile/FullFileReader.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testLib/googletest-master/ci/travis.sh">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/numbers.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReadFullFile/FullFileReader.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/SimpleTestGeneration100_10_1.txt">
       <provider selected="true" editor-type-id="text-editor" />
@@ -550,26 +585,6 @@
         <state relative-caret-position="-9138" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LongSum/LongSum.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-          <folding>
-            <element signature="e#39#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/testGenerator/testGenerator.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <element signature="e#39#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/SummatorTest/SummatorTest.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -577,8 +592,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/graph.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/FewThreadsSimpleTestGeneration100_10_1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="99" selection-end-column="2" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -587,57 +606,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LongSum/LongSum.h">
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/numbers.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        <state relative-caret-position="171">
+          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/graph.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/include/stdlib.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="562" column="12" selection-start-line="562" selection-start-column="12" selection-end-line="562" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReadFullFile/FullFileReader.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/stdio.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="683" column="11" selection-start-line="683" selection-start-column="11" selection-end-line="683" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReadFullFile/FullFileReader.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding>
-            <element signature="e#94#111#0" expanded="true" />
+            <element signature="e#39#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/TimeElapser/TimeElapser.cpp">
+    <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#39#57#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="247">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Summator/Summator.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        <state relative-caret-position="-371">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
           <folding>
             <element signature="e#97#115#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/FewThreadsSimpleTestGeneration100_10_1.txt">
+    <entry file="file://$PROJECT_DIR$/tests/TimeElapser/TimeElapser.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="99" selection-end-column="6" />
+        <state relative-caret-position="608">
+          <caret line="32" column="21" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
+          <folding>
+            <element signature="e#39#57#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Summator/Summator.cpp">
+    <entry file="file://$PROJECT_DIR$/tests/testGenerator/testGenerator.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="66" column="4" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
+        <state relative-caret-position="323">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
           <folding>
-            <element signature="e#39#60#0" expanded="true" />
+            <element signature="e#39#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/SummatorTest/SummatorTest.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="48" column="98" selection-start-line="48" selection-start-column="98" selection-end-line="48" selection-end-column="98" />
+        <state relative-caret-position="174">
+          <caret line="98" selection-start-line="98" selection-end-line="98" />
+          <folding>
+            <element signature="e#39#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LongSum/LongSum.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+          <folding>
+            <element signature="e#94#111#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LongSum/LongSum.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="712">
+          <caret line="69" column="45" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
+          <folding>
+            <element signature="e#39#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Summator/Summator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#39#60#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

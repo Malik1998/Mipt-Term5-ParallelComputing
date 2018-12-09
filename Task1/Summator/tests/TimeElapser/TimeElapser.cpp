@@ -5,6 +5,7 @@
 #include <fstream>
 #include "../../Summator/Summator.h"
 #include "../testGenerator/testGenerator.cpp"
+#include <time.h>
 
 int main() {
     std::string answer = testGenerator::generate("FewThreadsSimpleTestGeneration10000_1000_1.txt", 10000, 10000);
@@ -14,7 +15,7 @@ int main() {
     int max_threads = 10;
 
     myfile << "ns = np.array([";
-    for(size_t i = 1; i < max_threads; i++) {
+    for(int i = 1; i < max_threads; i++) {
         myfile << i;
         if (i + 1 != max_threads) {
             myfile << ", ";
@@ -24,16 +25,27 @@ int main() {
 
 
     myfile << "time = np.array([";
-    for (size_t i = 1; i < max_threads; i++) {
-        Summator summator("FewThreadsSimpleTestGeneration10000_1000_1.txt", i);
-        using namespace std;
-        clock_t begin = clock();
+    for (int i = 1; i < max_threads; i++) {
+        int error;
+        Summator summator("FewThreadsSimpleTestGeneration10000_1000_1.txt", i, error);
+
+        if (error) {
+            return 1;
+        }
+
+        struct timespec start, finish;
+        double elapsed;
+
+        clock_gettime(CLOCK_MONOTONIC, &start);
+
         int errorCode = summator.calculate();
 
-        clock_t end = clock();
-        double elapsed_secs = double(end - begin) / CLOCKS_PER_SEC;
+        clock_gettime(CLOCK_MONOTONIC, &finish);
 
-        myfile << elapsed_secs;
+        elapsed = (finish.tv_sec - start.tv_sec);
+        elapsed += (finish.tv_nsec - start.tv_nsec) / 1000000000.0;
+
+        myfile << elapsed;
         if (i + 1 != max_threads) {
             myfile << ", ";
         }

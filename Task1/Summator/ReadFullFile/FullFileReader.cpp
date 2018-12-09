@@ -10,30 +10,40 @@
 #include <fcntl.h>
 #include <stdio.h>
 #include <cstring>
+#include <cstdlib>
 
 namespace FullFileReader {
-    void readFullFile(const char *FileName, char ** text) {
+    int readFullFile(const char *FileName, char ** text) {
         FILE *f = fopen(FileName, "rb");
-        fseek(f, 0, SEEK_END);
+        if (fseek(f, 0, SEEK_END)) {
+            return 1;
+        }
         size_t size = static_cast<size_t>(ftell(f));
-        fseek(f, 0, SEEK_SET);
-        (*text) = new char[size + 1];
-        fread(*text, size, 1, f);
+        if (fseek(f, 0, SEEK_SET)) {
+            return 1;
+        }
+        if (!((*text) = (char *)malloc(sizeof(char) * (size + 1)))) {
+            return 1;
+        }
+        if(fread(*text, size, 1, f)) {
+           // return 1;
+        }
         (*text)[size] = 0;
         fclose(f);
+        return 0;
     }
 
-    size_t changeSlashesToNulles(char *text, size_t ** indexes) {
-        size_t countOfLines = 0;
-        size_t i = 0;
+    int changeSlashesToNulles(char *text, int ** indexes) {
+        int countOfLines = 0;
+        int i = 0;
         while (text[i] != '\0') {
             if (text[i] == '\n') {
                 ++countOfLines;
             }
             ++i;
         }
-        (*indexes) = new size_t[countOfLines + 1]; // may-be
-        size_t k = 0;
+        (*indexes) = new int[countOfLines + 1]; // may-be
+        int k = 0;
         i = 0;
         countOfLines = 0;
         while (text[i] != '\0') {
@@ -47,9 +57,9 @@ namespace FullFileReader {
         return countOfLines;
     }
 
-    void outputInFile(size_t * indexes, const char *text, const char *FileName, size_t countOfLines, int typeOfWriting) {
+    void outputInFile(int * indexes, const char *text, const char *FileName, int countOfLines, int typeOfWriting) {
         int fileDescriptor = open(FileName, typeOfWriting, 0666);
-        for (size_t i = 0; i < countOfLines - 1; ++i) {
+        for (int i = 0; i < countOfLines - 1; ++i) {
             write(fileDescriptor, text + indexes[i], strlen(&text[indexes[i]]));
             write(fileDescriptor, "\n", 1);
         }
